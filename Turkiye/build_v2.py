@@ -24,8 +24,6 @@ CH = [
  ("General", "Show TV", "ShowTV.tr", "", "https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv_1080p.m3u8"),
  ("General", "Show TV (yedek)", "ShowTV.tr", "", "https://showtv.blutv.com/blutv_showtv_live/live.m3u8"),
  ("General", "Show TV (yedek 2)", "ShowTV.tr", "", "https://ciner-live.daioncdn.net/showtv/showtv.m3u8", "https"),
- ("General", "Star TV", "StarTV.tr", "", "https://dogus-live.daioncdn.net/startv/startv.m3u8", "https"),
- ("General", "Star TV (yedek)", "StarTV.tr", "", "https://dogus.daioncdn.net/startv/startv.m3u8?app=a20ac41e-bdc3-4aa1-934d-26b484480ac9", "https"),
  ("General", "Show Türk", "ShowTurk.tr", "", "https://mn-nl.mncdn.com/blutv_showturk2/live.m3u8"),
  ("General", "Show Türk (yedek)", "ShowTurk.tr", "", "https://showturk.blutv.com/blutv_showturk2/live.m3u8"),
  ("General", "NOW", "NOW.tr", I+"5EYjWK7.png", "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8"),
