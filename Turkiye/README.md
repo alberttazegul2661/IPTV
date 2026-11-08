@@ -1,7 +1,7 @@
 # Turkiye — playlist IPTV
 
 Chaînes turques gratuites, flux officiels des diffuseurs (TRT, Demirören, Ciner, Doğuş, Turkuvaz, Türkmedya).
-46 chaînes, 9 catégories : Généralistes, Info, Économie, Sport, Jeunesse, Documentaires, Musique, Éducation, International & Langues.
+46 chaînes, 9 catégories (format iptv-org) : General, News, Business, Sports, Kids, Documentary, Music, Education, International.
 
 Lien à mettre dans IBO Player (type M3U URL) :
 

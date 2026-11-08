@@ -1,8 +1,7 @@
 import sys
 G = {
- "gen":"Turquie | Généralistes","info":"Turquie | Info","eco":"Turquie | Économie",
- "sport":"Turquie | Sport","kids":"Turquie | Jeunesse","doc":"Turquie | Documentaires",
- "music":"Turquie | Musique","edu":"Turquie | Éducation","intl":"Turquie | International & Langues",
+ "gen":"General","info":"News","eco":"Business","sport":"Sports","kids":"Kids",
+ "doc":"Documentary","music":"Music","edu":"Education","intl":"International",
 }
 I="https://i.imgur.com/"; T="http://assets.tvcdn.net/"; TRT="medya.trt.com.tr/master.m3u8"
 ch = [
@@ -63,8 +62,9 @@ ch = [
 ("intl","TRT Kurdî","TRTKurdi.tr",I+"6BpymfB.png","https://tv-trtkurdi."+TRT),
 ]
 out=['#EXTM3U']
-for n,(g,name,tid,logo,url) in enumerate(ch,1):
-    out.append(f'#EXTINF:-1 tvg-name="{name}" tvg-logo="{logo}" tvg-id="{tid}" tvg-chno="{n}" tvg-country="TR" group-title="{G[g]}",{name}')
+for g,name,tid,logo,url in ch:
+    attrs=f'tvg-id="{tid}"'+(f' tvg-logo="{logo}"' if logo else '')+f' group-title="{G[g]}"'
+    out.append(f'#EXTINF:-1 {attrs},{name}')
     out.append(url)
 open(sys.argv[1],"w",encoding="utf-8").write("\n".join(out)+"\n")
 print(len(ch),"chaînes")
