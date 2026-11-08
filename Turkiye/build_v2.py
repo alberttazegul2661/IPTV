@@ -16,13 +16,17 @@ CH = [
  ("General", "TRT 1", "TRT1.tr", I+"j786OLG.png", TRT("trt1")),
  ("General", "TRT 2", "TRT2.tr", I+"lNWrOE2.png", TRT("trt2")),
  ("General", "ATV", "ATV.tr", I+"HyVUwFC.png", TKV+"atv/atv.m3u8"),
- ("General", "ATV (secours)", "ATV.tr", I+"HyVUwFC.png", "https://trkvz-live.daioncdn.net/atv/atv.m3u8"),
+ ("General", "ATV (yedek)", "ATV.tr", I+"HyVUwFC.png", "https://trkvz-live.daioncdn.net/atv/atv.m3u8"),
  ("General", "Kanal D", "KanalD.tr", I+"9o1atM6.png", "https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3"),
  ("General", "Show TV", "ShowTV.tr", "", "https://ciner-live.daioncdn.net/showtv/showtv.m3u8"),
+ ("General", "Show TV (yedek)", "ShowTV.tr", "", "https://bloomberght-live.daioncdn.net/showtv/showtv.m3u8"),
  ("General", "Star TV", "StarTV.tr", "", "https://dogus-live.daioncdn.net/startv/startv.m3u8"),
+ ("General", "Star TV (yedek 1)", "StarTV.tr", "", "https://dogus.daioncdn.net/startv/startv.m3u8?app=a20ac41e-bdc3-4aa1-934d-26b484480ac9"),
+ ("General", "Star TV (yedek 2)", "StarTV.tr", "", "http://dygvideo.dygdigital.com/live/hls/startv4puhu?m3u8"),
  ("General", "NOW", "NOW.tr", I+"5EYjWK7.png", "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8"),
- ("General", "TV8", "TV8.tr", "", "https://tv8-live.daioncdn.net/tv8/tv8.m3u8"),
- ("General", "TV8.5", "TV85.tr", "", "https://tv8-live.daioncdn.net/tv8bucuk/tv8bucuk.m3u8"),
+ ("General", "TV8", "TV8.tr", "", "https://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8/tv8.m3u8"),
+ ("General", "TV8 (yedek)", "TV8.tr", "", "https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3"),
+ ("General", "TV8.5", "TV85.tr", "", "https://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8bucuk/tv8bucuk.m3u8"),
  ("General", "Teve2", "Teve2.tr", "", "https://demiroren-live.daioncdn.net/teve2/teve2.m3u8"),
  ("General", "Kanal 7", "Kanal7.tr", I+"0gq9xOm.png", "https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8"),
  ("General", "Beyaz TV", "BeyazTV.tr", I+"uykIdML.png", "https://mn-nl.mncdn.com/blutv_beyaztv2/live.m3u8"),
@@ -101,13 +105,17 @@ CH = [
  ("International", "TRT Kurdî", "TRTKurdi.tr", I+"6BpymfB.png", TRT("trtkurdi")),
 ]
 
+TR = {"General": "Ulusal", "News": "Haber", "Business": "Ekonomi", "Sports": "Spor",
+      "Kids": "Çocuk", "Documentary": "Belgesel", "Music": "Müzik", "Religious": "Dini",
+      "Education": "Eğitim", "International": "Uluslararası"}
+
 def write(path, http):
     out = ["#EXTM3U"]
     for g, name, tid, logo, url in CH:
         if http and url.startswith("https://"):
             url = "http://" + url[8:]
         logo = f' tvg-logo="{logo}"' if logo else ""
-        out.append(f'#EXTINF:-1 tvg-id="{tid}"{logo} group-title="{g}",{name}')
+        out.append(f'#EXTINF:-1 tvg-id="{tid}"{logo} group-title="{TR[g]}",{name}')
         out.append(url)
     open(path, "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
 
