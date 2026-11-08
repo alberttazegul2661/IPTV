@@ -15,11 +15,7 @@ CH = [
  # --- Généralistes
  ("General", "TRT 1", "TRT1.tr", I+"j786OLG.png", TRT("trt1")),
  ("General", "TRT 2", "TRT2.tr", I+"lNWrOE2.png", TRT("trt2")),
- ("General", "ATV", "ATV.tr", I+"HyVUwFC.png", TKV+"atv/atv.m3u8", "https"),
- ("General", "ATV 720p", "ATV.tr", I+"HyVUwFC.png", TKV+"atv/atv_720p.m3u8", "https"),
- ("General", "ATV 1080p", "ATV.tr", I+"HyVUwFC.png", TKV+"atv/atv_1080p.m3u8"),
- ("General", "ATV (yedek 1)", "ATV.tr", I+"HyVUwFC.png", "https://trkvz-live.daioncdn.net/atv/atv.m3u8", "https"),
- ("General", "ATV (yedek 2)", "ATV.tr", I+"HyVUwFC.png", "https://trkvz.daioncdn.net/atv/atv.m3u8?app=d1ce2d40-5256-4550-b02e-e73c185a314e", "https"),
+ ("General", "ATV", "ATV.tr", I+"HyVUwFC.png", TKV+"atv/atv_720p.m3u8"),
  ("General", "Kanal D", "KanalD.tr", I+"9o1atM6.png", "https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3"),
  ("General", "Show TV", "ShowTV.tr", "", "https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv_1080p.m3u8"),
  ("General", "Show TV (yedek)", "ShowTV.tr", "", "https://showtv.blutv.com/blutv_showtv_live/live.m3u8"),

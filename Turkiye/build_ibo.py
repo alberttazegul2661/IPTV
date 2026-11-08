@@ -4,8 +4,8 @@ Construite à partir de la liste de build_v2.py.  Usage : python3 build_ibo.py
 from build_v2 import CH, TR
 
 # Chaînes connues pour ne pas fonctionner en http (testées dans IBO)
-SKIP = {"TV8", "ATV", "ATV 720p"}
-RENAME = {"ATV 1080p": "ATV"}
+SKIP = {"TV8"}
+RENAME = {}
 
 out, seen = ["#EXTM3U"], set()
 for g, name, tid, logo, url, *flags in CH:
