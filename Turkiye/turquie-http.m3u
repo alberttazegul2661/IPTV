@@ -1,8 +1,14 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="A2TV.tr@SD" group-title="General",A2TV
 http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv.m3u8
+#EXTINF:-1 tvg-id="A2TV.tr@SD" group-title="General",A2TV (secours 1)
+http://trkvz-live.daioncdn.net/a2tv/a2tv.m3u8
 #EXTINF:-1 tvg-id="ATV.tr@SD" tvg-logo="https://i.imgur.com/HyVUwFC.png" group-title="General",ATV
 http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
+#EXTINF:-1 tvg-id="ATV.tr@SD" tvg-logo="https://i.imgur.com/HyVUwFC.png" group-title="General",ATV (secours 1)
+http://trkvz-live.daioncdn.net/atv/atv.m3u8
+#EXTINF:-1 tvg-id="ATV.tr@SD" tvg-logo="https://i.imgur.com/HyVUwFC.png" group-title="General",ATV (secours 2)
+http://trkvz.daioncdn.net/atv/atv.m3u8
 #EXTINF:-1 tvg-id="BeyazTV.tr" tvg-logo="https://i.imgur.com/uykIdML.png" group-title="General",Beyaz TV
 http://beyaztv.daioncdn.net/beyaztv/beyaztv.m3u8?app=fcd5c66b-da9d-44ba-a410-4f34805c397d&ce=3
 #EXTINF:-1 tvg-id="EuroD.tr@SD" group-title="General",Euro D
@@ -45,6 +51,8 @@ http://tv8-live.daioncdn.net/tv8bucuk/tv8bucuk.m3u8
 http://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 #EXTINF:-1 tvg-id="AHaber.tr@SD" group-title="News",A Haber
 http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/ahaber/ahaber.m3u8
+#EXTINF:-1 tvg-id="AHaber.tr@SD" group-title="News",A Haber (secours 1)
+http://trkvz-live.daioncdn.net/ahaber/ahaber.m3u8
 #EXTINF:-1 tvg-id="AnadoluNetTV.tr@SD" group-title="News",Anadolu Net TV
 http://live.artidijitalmedya.com/artidijital_anadolunet/anadolunet/playlist.m3u8
 #EXTINF:-1 tvg-id="BenguturkTV.tr@SD" group-title="News",BENGÜTÜRK TV
@@ -95,6 +103,8 @@ http://cdn.ekoturk.net/hls/master.m3u8
 http://yayin30.haber100.com/live/finansturk/playlist.m3u8
 #EXTINF:-1 tvg-id="ASpor.tr@SD" tvg-logo="https://i.imgur.com/ZhkZzLf.png" group-title="Sports",A Spor
 http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8
+#EXTINF:-1 tvg-id="ASpor.tr@SD" tvg-logo="https://i.imgur.com/ZhkZzLf.png" group-title="Sports",A Spor (secours 1)
+http://trkvz-live.daioncdn.net/aspor/aspor.m3u8
 #EXTINF:-1 tvg-id="EkolSports.tr" group-title="Sports",Ekol Sports
 http://ekoltv-live.ercdn.net/ekolsport/ekolsport_1080p.m3u8
 #EXTINF:-1 tvg-id="FBTV.tr@SD" group-title="Sports",FB TV
