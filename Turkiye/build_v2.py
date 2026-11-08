@@ -110,7 +110,13 @@ CH = [
  ("International", "TRT Kurdî", "TRTKurdi.tr", I+"6BpymfB.png", TRT("trtkurdi")),
 ]
 
-TR = {"General": "Ulusal", "News": "Haber", "Business": "Ekonomi", "Sports": "Spor",
+from extra_channels import EXTRA
+CH += EXTRA
+_ORDER = ["General", "News", "Business", "Sports", "Kids", "Documentary", "Movies",
+          "Music", "Religious", "Education", "International", "Regional"]
+CH.sort(key=lambda c: _ORDER.index(c[0]))   # tri stable : garde l'ordre interne
+
+TR = {"Movies": "Dizi & Film", "Regional": "Yerel", "General": "Ulusal", "News": "Haber", "Business": "Ekonomi", "Sports": "Spor",
       "Kids": "Çocuk", "Documentary": "Belgesel", "Music": "Müzik", "Religious": "Dini",
       "Education": "Eğitim", "International": "Uluslararası"}
 
