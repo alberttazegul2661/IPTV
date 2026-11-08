@@ -16,7 +16,6 @@ CH = [
  ("General", "TRT 1", "TRT1.tr", I+"j786OLG.png", TRT("trt1")),
  ("General", "TRT 2", "TRT2.tr", I+"lNWrOE2.png", TRT("trt2")),
  ("General", "ATV", "ATV.tr", I+"HyVUwFC.png", TKV+"atv/atv_1080p.m3u8"),
- ("General", "ATV (https)", "ATV.tr", I+"HyVUwFC.png", TKV+"atv/atv_1080p.m3u8"),
  ("General", "Kanal D", "KanalD.tr", I+"9o1atM6.png", "https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3"),
  ("General", "Show TV", "ShowTV.tr", "", "https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv_1080p.m3u8"),
  ("General", "Show TV (yedek)", "ShowTV.tr", "", "https://showtv.blutv.com/blutv_showtv_live/live.m3u8"),
@@ -114,7 +113,7 @@ TR = {"General": "Ulusal", "News": "Haber", "Business": "Ekonomi", "Sports": "Sp
 def write(path, http):
     out = ["#EXTM3U"]
     for g, name, tid, logo, url in CH:
-        if http and url.startswith("https://") and not name.endswith("(https)"):
+        if http and url.startswith("https://"):
             url = "http://" + url[8:]
         logo = f' tvg-logo="{logo}"' if logo else ""
         out.append(f'#EXTINF:-1 tvg-id="{tid}"{logo} group-title="{TR[g]}",{name}')
