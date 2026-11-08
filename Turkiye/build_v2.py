@@ -78,6 +78,8 @@ CH = [
  # --- Documentaires
  ("Documentary", "TRT Belgesel", "TRTBelgesel.tr", I+"MGO87pe.png", TRT("trtbelgesel")),
  ("Documentary", "GZT", "GZT.tr", "", "https://gzttv-live.lg.mncdn.com/gzttv/gzttv/playlist.m3u8"),
+ ("Documentary", "DMAX", "DMAX.tr", "", "https://dogus-live.daioncdn.net/dmax/dmax.m3u8"),
+ ("Documentary", "TLC", "TLC.tr", "", "https://dogus-live.daioncdn.net/tlc/tlc.m3u8"),
  ("Documentary", "TGRT Belgesel", "TGRTBelgesel.tr", "", MT+"mtsxxkzwwuqtglive/broadcast_5fe462afc6a0e.smil/playlist.m3u8"),
  # --- Musique
  ("Music", "TRT Müzik", "TRTMuzik.tr", I+"fIVFCEd.png", TRT("trtmuzik")),
@@ -128,6 +130,7 @@ def write(path, http):
         out.append(url)
     open(path, "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
 
-write("turquie-v2.m3u", http=False)
-write("turquie-v2-http.m3u", http=True)
-print(len(CH), "entrées")
+if __name__ == "__main__":
+    write("turquie-v2.m3u", http=False)
+    write("turquie-v2-http.m3u", http=True)
+    print(len(CH), "entrées")

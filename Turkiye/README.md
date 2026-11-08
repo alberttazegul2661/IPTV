@@ -19,7 +19,8 @@ https://alberttazegul2661.github.io/IPTV/Turkiye/turquie.m3u
 - `clean.py` — régénère la playlist : `python3 clean.py source-iptv-org.m3u source-officiels.m3u turquie.m3u`
 
 ## Version 2 (sélection nationale, flux officiels uniquement)
-- `turquie-v2-http.m3u` — pour IBO Player : https://alberttazegul2661.github.io/IPTV/Turkiye/turquie-v2-http.m3u
+- `turquie-ibo.m3u` — version propre pour IBO Player (http, une entrée par chaîne) : https://alberttazegul2661.github.io/IPTV/Turkiye/turquie-ibo.m3u
+- `turquie-v2-http.m3u` — version de test http
 - `turquie-v2.m3u` — version https (VLC, TiviMate…)
 - `build_v2.py` — liste des chaînes et régénération : `python3 build_v2.py`
 
