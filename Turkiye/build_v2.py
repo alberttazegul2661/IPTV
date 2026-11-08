@@ -15,14 +15,22 @@ CH = [
  # --- Généralistes
  ("General", "TRT 1", "TRT1.tr", I+"j786OLG.png", TRT("trt1")),
  ("General", "TRT 2", "TRT2.tr", I+"lNWrOE2.png", TRT("trt2")),
- ("General", "ATV", "ATV.tr", I+"HyVUwFC.png", TKV+"atv/atv_1080p.m3u8"),
+ ("General", "ATV", "ATV.tr", I+"HyVUwFC.png", TKV+"atv/atv.m3u8", "https"),
+ ("General", "ATV 720p", "ATV.tr", I+"HyVUwFC.png", TKV+"atv/atv_720p.m3u8", "https"),
+ ("General", "ATV 1080p", "ATV.tr", I+"HyVUwFC.png", TKV+"atv/atv_1080p.m3u8"),
+ ("General", "ATV (yedek 1)", "ATV.tr", I+"HyVUwFC.png", "https://trkvz-live.daioncdn.net/atv/atv.m3u8", "https"),
+ ("General", "ATV (yedek 2)", "ATV.tr", I+"HyVUwFC.png", "https://trkvz.daioncdn.net/atv/atv.m3u8?app=d1ce2d40-5256-4550-b02e-e73c185a314e", "https"),
  ("General", "Kanal D", "KanalD.tr", I+"9o1atM6.png", "https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3"),
  ("General", "Show TV", "ShowTV.tr", "", "https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv_1080p.m3u8"),
  ("General", "Show TV (yedek)", "ShowTV.tr", "", "https://showtv.blutv.com/blutv_showtv_live/live.m3u8"),
+ ("General", "Show TV (yedek 2)", "ShowTV.tr", "", "https://ciner-live.daioncdn.net/showtv/showtv.m3u8", "https"),
+ ("General", "Star TV", "StarTV.tr", "", "https://dogus-live.daioncdn.net/startv/startv.m3u8", "https"),
+ ("General", "Star TV (yedek)", "StarTV.tr", "", "https://dogus.daioncdn.net/startv/startv.m3u8?app=a20ac41e-bdc3-4aa1-934d-26b484480ac9", "https"),
  ("General", "Show Türk", "ShowTurk.tr", "", "https://mn-nl.mncdn.com/blutv_showturk2/live.m3u8"),
  ("General", "Show Türk (yedek)", "ShowTurk.tr", "", "https://showturk.blutv.com/blutv_showturk2/live.m3u8"),
  ("General", "NOW", "NOW.tr", I+"5EYjWK7.png", "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8"),
  ("General", "TV8", "TV8.tr", "", "https://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8/tv8.m3u8"),
+ ("General", "TV8 (yedek)", "TV8.tr", "", "https://tv8-live.daioncdn.net/tv8/tv8.m3u8", "https"),
  ("General", "TV8 Int", "TV8International.tr", "", "https://mn-nl.mncdn.com/blutv_tv8_int2/live.m3u8"),
  ("General", "TV8.5", "TV85.tr", "", "https://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8bucuk/tv8bucuk.m3u8"),
  ("General", "TV8.5 (yedek)", "TV85.tr", "", "https://tv85.blutv.com/blutv_tv8_5_live/live.m3u8"),
@@ -112,7 +120,9 @@ TR = {"General": "Ulusal", "News": "Haber", "Business": "Ekonomi", "Sports": "Sp
 
 def write(path, http):
     out = ["#EXTM3U"]
-    for g, name, tid, logo, url in CH:
+    for g, name, tid, logo, url, *flags in CH:
+        if http and "https" in flags:
+            continue          # flux https uniquement : inutile pour IBO
         if http and url.startswith("https://"):
             url = "http://" + url[8:]
         logo = f' tvg-logo="{logo}"' if logo else ""

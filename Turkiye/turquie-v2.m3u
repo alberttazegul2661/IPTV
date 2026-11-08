@@ -4,13 +4,27 @@ https://tv-trt1.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="TRT2.tr" tvg-logo="https://i.imgur.com/lNWrOE2.png" group-title="Ulusal",TRT 2
 https://tv-trt2.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="ATV.tr" tvg-logo="https://i.imgur.com/HyVUwFC.png" group-title="Ulusal",ATV
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8
+#EXTINF:-1 tvg-id="ATV.tr" tvg-logo="https://i.imgur.com/HyVUwFC.png" group-title="Ulusal",ATV 720p
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_720p.m3u8
+#EXTINF:-1 tvg-id="ATV.tr" tvg-logo="https://i.imgur.com/HyVUwFC.png" group-title="Ulusal",ATV 1080p
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
+#EXTINF:-1 tvg-id="ATV.tr" tvg-logo="https://i.imgur.com/HyVUwFC.png" group-title="Ulusal",ATV (yedek 1)
+https://trkvz-live.daioncdn.net/atv/atv.m3u8
+#EXTINF:-1 tvg-id="ATV.tr" tvg-logo="https://i.imgur.com/HyVUwFC.png" group-title="Ulusal",ATV (yedek 2)
+https://trkvz.daioncdn.net/atv/atv.m3u8?app=d1ce2d40-5256-4550-b02e-e73c185a314e
 #EXTINF:-1 tvg-id="KanalD.tr" tvg-logo="https://i.imgur.com/9o1atM6.png" group-title="Ulusal",Kanal D
 https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
 #EXTINF:-1 tvg-id="ShowTV.tr" group-title="Ulusal",Show TV
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv_1080p.m3u8
 #EXTINF:-1 tvg-id="ShowTV.tr" group-title="Ulusal",Show TV (yedek)
 https://showtv.blutv.com/blutv_showtv_live/live.m3u8
+#EXTINF:-1 tvg-id="ShowTV.tr" group-title="Ulusal",Show TV (yedek 2)
+https://ciner-live.daioncdn.net/showtv/showtv.m3u8
+#EXTINF:-1 tvg-id="StarTV.tr" group-title="Ulusal",Star TV
+https://dogus-live.daioncdn.net/startv/startv.m3u8
+#EXTINF:-1 tvg-id="StarTV.tr" group-title="Ulusal",Star TV (yedek)
+https://dogus.daioncdn.net/startv/startv.m3u8?app=a20ac41e-bdc3-4aa1-934d-26b484480ac9
 #EXTINF:-1 tvg-id="ShowTurk.tr" group-title="Ulusal",Show Türk
 https://mn-nl.mncdn.com/blutv_showturk2/live.m3u8
 #EXTINF:-1 tvg-id="ShowTurk.tr" group-title="Ulusal",Show Türk (yedek)
@@ -19,6 +33,8 @@ https://showturk.blutv.com/blutv_showturk2/live.m3u8
 https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
 #EXTINF:-1 tvg-id="TV8.tr" group-title="Ulusal",TV8
 https://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8/tv8.m3u8
+#EXTINF:-1 tvg-id="TV8.tr" group-title="Ulusal",TV8 (yedek)
+https://tv8-live.daioncdn.net/tv8/tv8.m3u8
 #EXTINF:-1 tvg-id="TV8International.tr" group-title="Ulusal",TV8 Int
 https://mn-nl.mncdn.com/blutv_tv8_int2/live.m3u8
 #EXTINF:-1 tvg-id="TV85.tr" group-title="Ulusal",TV8.5
